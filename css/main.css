@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    max-width: 800px;
+    margin-left: calc(50% - 400px);
+  }
+  
+  /* emoji class is covering all items in boxes except, so used flex properties */
+
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 400px;
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    align-self: left;
+    width: 100%;
+  }
+  
+  .emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(100% - 2rem);
+    align-self: flex-end;
+    margin: auto 0 0 0;
+  }
+  
+  .icon {
+    font-size: 4rem;
+    order: -1;
+  }
+
+  /* emojis class is covering all 4 boxes except first header, so used grid properties */
+
+  .emojis {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 5px;
+  }
